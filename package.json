@@ -1,0 +1,40 @@
+{
+  "name": "upl-language",
+  "displayName": "UPL Language Support",
+  "description": "Language support for the Useless Programming Language (UPL)",
+  "version": "0.0.1",
+  "publisher": "RedlineDev",
+  "author": {
+    "name": "RedlineDev"
+  },
+  "icon": "images/icon.png",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RedlineDevs/upl-language"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "upl",
+    "useless programming language",
+    "syntax highlighting"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "upl",
+      "aliases": ["UPL", "upl"],
+      "extensions": [".upl"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "upl",
+      "scopeName": "source.upl",
+      "path": "./syntaxes/upl.tmLanguage.json"
+    }]
+  }
+}
