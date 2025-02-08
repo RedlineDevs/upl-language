@@ -1,7 +1,7 @@
 {
   "name": "upl-language",
-  "displayName": "UPL Language Support",
-  "description": "Language support for the Useless Programming Language (UPL)",
+  "displayName": "Useless Programming Language (UPL)",
+  "description": "Language support for the Useless Programming Language (UPL) - A language designed to be as useless as possible",
   "version": "0.0.1",
   "publisher": "RedlineDev",
   "author": {
@@ -22,7 +22,8 @@
   "keywords": [
     "upl",
     "useless programming language",
-    "syntax highlighting"
+    "syntax highlighting",
+    "esoteric language"
   ],
   "contributes": {
     "languages": [{
