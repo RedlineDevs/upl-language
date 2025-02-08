@@ -19,7 +19,7 @@ This extension adds language support for the Useless Programming Language (UPL) 
 
 1. Open VS Code
 2. Press `Ctrl+P` (or `Cmd+P` on macOS)
-3. Type `ext install upl-language`
+3. Type `ext install RedlineDev.upl-language`
 4. Press Enter
 
 ## Known Issues
