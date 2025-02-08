@@ -2,7 +2,7 @@
   "name": "upl-language",
   "displayName": "Useless Programming Language (UPL)",
   "description": "Language support for the Useless Programming Language (UPL) - A language designed to be as useless as possible",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "RedlineDev",
   "author": {
     "name": "RedlineDev"
@@ -23,7 +23,10 @@
     "upl",
     "useless programming language",
     "syntax highlighting",
-    "esoteric language"
+    "esoteric language",
+    "chaos programming",
+    "async chaos",
+    "unreliable computing"
   ],
   "contributes": {
     "languages": [{
@@ -37,5 +40,19 @@
       "scopeName": "source.upl",
       "path": "./syntaxes/upl.tmLanguage.json"
     }]
+  },
+  "features": {
+    "syntax": [
+      "Chaotic variable declarations",
+      "Arrays that might lose elements",
+      "Objects with identity-crisis keys",
+      "Async/await with random delays",
+      "Promises that might change their mind",
+      "Print statements that open random websites",
+      "Try/catch blocks that might catch the wrong error",
+      "Numbers that might become emoji parties",
+      "Booleans with identity issues",
+      "Loops that run exactly once"
+    ]
   }
 }
