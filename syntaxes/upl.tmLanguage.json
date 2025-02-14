@@ -29,10 +29,28 @@
 	],
 	"repository": {
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.upl",
-				"match": "\\b(if|else|let|loop|save|exit|async|await|try|catch|promise)\\b"
-			}]
+			"patterns": [
+				{
+					"name": "keyword.control.flow.upl",
+					"match": "\\b(if|else|loop)\\b"
+				},
+				{
+					"name": "storage.type.upl",
+					"match": "\\b(let)\\b"
+				},
+				{
+					"name": "keyword.control.async.upl",
+					"match": "\\b(async|await|promise)\\b"
+				},
+				{
+					"name": "keyword.control.exception.upl",
+					"match": "\\b(try|catch)\\b"
+				},
+				{
+					"name": "keyword.other.upl",
+					"match": "\\b(save|exit)\\b"
+				}
+			]
 		},
 		"strings": {
 			"name": "string.quoted.double.upl",
@@ -52,23 +70,35 @@
 					"match": "//.*$"
 				},
 				{
-					"name": "comment.block.upl",
+					"name": "comment.block.documentation.upl",
 					"begin": "/\\*",
 					"end": "\\*/"
 				}
 			]
 		},
 		"functions": {
-			"patterns": [{
-				"name": "support.function.upl",
-				"match": "\\b(print|add|multiply|save|index|access|equals|lessThan|promise)\\b"
-			}]
+			"patterns": [
+				{
+					"name": "entity.name.function.upl",
+					"match": "\\b(print)\\b"
+				},
+				{
+					"name": "support.function.math.upl",
+					"match": "\\b(add|multiply)\\b"
+				},
+				{
+					"name": "support.function.chaos.upl",
+					"match": "\\b(index|access)\\b"
+				},
+				{
+					"name": "support.function.comparison.upl",
+					"match": "\\b(equals|lessThan)\\b"
+				}
+			]
 		},
 		"numbers": {
-			"patterns": [{
-				"name": "constant.numeric.upl",
-				"match": "\\b[0-9]+\\b"
-			}]
+			"name": "constant.numeric.upl",
+			"match": "\\b[0-9]+\\b"
 		},
 		"operators": {
 			"patterns": [
@@ -77,28 +107,42 @@
 					"match": "="
 				},
 				{
-					"name": "keyword.operator.punctuation.upl",
+					"name": "punctuation.separator.upl",
 					"match": "[,;]"
 				},
 				{
-					"name": "keyword.operator.brackets.upl",
-					"match": "[\\(\\)\\{\\}\\[\\]]"
+					"name": "punctuation.brackets.round.upl",
+					"match": "[\\(\\)]"
 				},
 				{
-					"name": "keyword.operator.object.upl",
+					"name": "punctuation.brackets.curly.upl",
+					"match": "[\\{\\}]"
+				},
+				{
+					"name": "punctuation.brackets.square.upl",
+					"match": "[\\[\\]]"
+				},
+				{
+					"name": "punctuation.separator.key-value.upl",
 					"match": ":"
 				}
 			]
 		},
 		"booleans": {
-			"patterns": [{
-				"name": "constant.language.upl",
-				"match": "\\b(true|false|null)\\b"
-			}]
+			"patterns": [
+				{
+					"name": "constant.language.boolean.upl",
+					"match": "\\b(true|false)\\b"
+				},
+				{
+					"name": "constant.language.null.upl",
+					"match": "\\b(null)\\b"
+				}
+			]
 		},
 		"identifiers": {
 			"patterns": [{
-				"name": "variable.other.upl",
+				"name": "variable.other.readwrite.upl",
 				"match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
 			}]
 		}
